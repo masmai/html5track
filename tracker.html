@@ -46,7 +46,7 @@ $("button").click(function(){
  
 function success(position)
 {
-	console.log(JSON.stringify(position));
+console.log(JSON.stringify(position.coords.latitude+" : "+position.coords.longitude))
 	var googleLatLng = new google.maps.LatLng(position.coords.latitude, 
 						position.coords.longitude);
 	var mapOtn={
